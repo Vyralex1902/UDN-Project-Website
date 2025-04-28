@@ -12,9 +12,6 @@ import { Link } from "react-router-dom";
 
 import "./styles/heading.css";
 
-import mypic1 from "./assets/mypic1.jpeg"
-import mypic2 from "./assets/mypic2.jpeg"
-import mypic3 from "./assets/mypic3.png"
 import pill from "./assets/Pill.png"
 import Swal from "sweetalert2";
 
@@ -23,16 +20,6 @@ var currentPictureIndex = 0;
 
 const Heading = () => {
   useEffect(() => {
-    const ppic = document.getElementById("profilepic");
-    if (ppic) {
-      const rnd = Math.floor(Math.random() * 3);
-      currentPictureIndex = rnd;
-      switch (rnd) {
-        case 0: ppic.setAttribute('src', mypic2); break;
-        case 1: ppic.setAttribute('src', mypic3); break;
-        case 2: ppic.setAttribute('src', mypic1); break;
-      }
-    }
 
     const headingIconElement1 = document.getElementById("headingIcon1");
     const headingIconElement2 = document.getElementById("headingIcon2");
@@ -125,10 +112,7 @@ const Heading = () => {
   });
 
   return (
-    <div className="fixed top-0 flex flex-row pt-1 pb-1 z-50 justify-center w-screen h-[75px] cursor-pointer">
-      <motion.button id="picbtn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={togglePicture} className="animate-reveal backdrop-blur-lg w-14 h-14 border-white border-opacity-20 align-middle flex justify-center rounded-full mr-3 mt-[5px]">
-        <img id="profilepic" className=" w-14 h-14 align-middle rounded-full "></img>
-      </motion.button>
+    <div className="fixed top-0 flex flex-row pt-[6px] pb-1 z-50 justify-center w-screen h-[75px] cursor-pointer">
       <div id="headingThing" className="min-w-[550px] max-w-[550px] backdrop-blur-lg border-gray-500 dark:border-gray-700 border-opacity-20 dark:border-opacity-100 border-[1.5px] flex w-fit justify-center rounded-full items-center bg-transparent">
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "100%" }}>
           <HeadingIcon id="headingIcon1" text="Home" link="/" ></HeadingIcon>
@@ -136,10 +120,6 @@ const Heading = () => {
           <HeadingIcon id="headingIcon3" text="Passions" link="/hobbies" ></HeadingIcon>
           <HeadingIcon id="headingIcon4" text="My Story" link="/mystory" ></HeadingIcon>
         </div>
-      </div>
-      <div id="themeToggle" className="border-2 border-white border-opacity-20 w-14 h-14 rounded-full bg-black bg-opacity-35 hover:bg-opacity-50
-          dark:bg-white dark:bg-opacity-20 justify-center align-middle flex items-center ml-3 mt-[5px] backdrop-blur-lg">
-        <button className="flex align-middle justify-center"><IoMoonSharp style={{ color: "white", width: "22px", height: "22px" }} onClick={toggleTheme} /></button>
       </div>
     </div>
   );
@@ -174,23 +154,6 @@ const DevelopmentHeadingIcon = () => (
     </div>
   </div>
 );
-
-const togglePicture = () => {
-  const ppic = document.getElementById("profilepic");
-  if (ppic) {
-    if (currentPictureIndex < 2) {
-      currentPictureIndex++;
-    }
-    else {
-      currentPictureIndex = 0;
-    }
-    switch (currentPictureIndex) {
-      case 0: ppic.setAttribute('src', mypic2); break;
-      case 1: ppic.setAttribute('src', mypic3); break;
-      case 2: ppic.setAttribute('src', mypic1); break;
-    }
-  }
-}
 
 const toggleTheme = () => {
   if (
