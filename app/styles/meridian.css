@@ -1,0 +1,70 @@
+h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#sectionDivFirst {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  padding: 10px;
+  border-color: gray;
+  justify-content: center;
+  width: 550px;
+  border: 0.4px solid rgb(255, 255, 255, 0.4);
+}
+#sectionDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  padding: 10px;
+  border-color: gray;
+  justify-content: center;
+  width: 50vw;
+}
+
+.downloadbtn_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.downloadbtn_div button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#downloadbtncontainer {
+  border-radius: 0px 0px 8px 8px;
+}
+
+#futuraf {
+  font-family: "futura";
+}
+
+#heroSection {
+  background: radial-gradient(ellipse at top, #050f26 30%, #0c338c 70%);
+}
+
+#title1 {
+  -webkit-text-stroke: 3px white;
+  color: transparent;
+}
+
+#mki {
+  font-family: "Gideon Roman", serif;
+}
+
+#catchPhrase {
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 5px #9e9e9e, 0 0 10px #929292;
+}
+
+@media screen and (max-width: 900px) {
+}

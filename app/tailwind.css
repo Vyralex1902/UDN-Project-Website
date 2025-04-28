@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .heading-icon {
+    @apply relative flex items-center justify-center h-[40px] w-[120px] my-auto hover:bg-gray-200 hover:dark:text-black bg-transparent text-black dark:text-white rounded-full transition-all;
+  }
+  .heading-icon-selected {
+    @apply relative flex items-center justify-center h-[40px] w-[120px] my-auto bg-white bg-opacity-5 text-white font-semibold rounded-full transition-all;
+  }
+
+  .heading-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max top-12 rounded-md shadow-md text-white font-bold transition-all duration-100 scale-0 origin-top text-xs z-50;
+  }
+
+  .darkmode-text-h2 {
+    @apply text-gray-800 dark:text-gray-300;
+  }
+
+  .darkmode-text-p {
+    @apply text-gray-900 dark:text-gray-200;
+  }
+
+  .darkmode-bg {
+    @apply bg-white dark:bg-[rgba(14,16,17,1)];
+  }
+
+  .fjc {
+    @apply flex justify-center;
+  }
+
+  .homepagebtn {
+    @apply w-[150px] h-[52px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+    font-bold hover:bg-blue-600 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
+  }
+  .homepagebtnlarger {
+    @apply w-[220px] h-[55px] bg-transparent border-2 border-blue-600 rounded-[10px] text-blue-600
+    font-bold hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-400 hover:border-0 hover:text-[#081b29] text-lg font-[Montserrat] transition-all;
+  }
+}

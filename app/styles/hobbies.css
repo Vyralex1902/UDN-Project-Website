@@ -1,0 +1,26 @@
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#sectionDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-column-gap: 250px;
+  grid-row-gap: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  #sectionContainer {
+    grid-column-gap: 30px;
+  }
+  #title {
+    font-size: 30px;
+  }
+}

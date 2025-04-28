@@ -1,0 +1,329 @@
+h3 {
+  text-decoration: underline;
+  font-size: medium;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#subttl {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 7s infinite;
+  font-weight: 600;
+}
+#subttl::before {
+  animation: wordss 21s infinite;
+}
+
+#arrowimg {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(197deg)
+    brightness(107%) contrast(101%);
+  rotate: 180deg;
+  animation: bouncyarrow 1.5s infinite;
+}
+
+@keyframes bouncyarrow {
+  10% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+}
+@keyframes wordss {
+  0%,
+  33% {
+    content: "Web and App Developer";
+  }
+  34%,
+  67% {
+    content: "Frontend Developer";
+  }
+  68%,
+  100% {
+    content: "Tech enthusiast";
+  }
+}
+
+#profilepic1 {
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#freelancingSectionDiv,
+#terminalimg,
+#myinfodiv {
+  /* animation: reveal ease-in;
+  animation-timeline: view();
+  animation-range-end: 15%; */
+  min-width: 600px;
+}
+#freelancingSectionDiv,
+#myinfodiv {
+  border: 1px solid;
+  border-color: rgba(200, 200, 200, 0.1);
+}
+#freelancingSectionDiv::hover,
+#myinfodiv::hover {
+  box-shadow: 0 0 15px rgba(120, 0, 108, 0.3);
+}
+
+#freelancingSectionDiv h1,
+h2,
+#myinfodiv h1,
+h2 {
+  pointer-events: none;
+}
+
+#gigatitle {
+  font-size: 4.5vw;
+  font-weight: 600;
+  font-family: "title";
+  background-image: url("../assets/mainPageTextClip.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#middleStory {
+  border-radius: 0px 0px 30px 30px;
+}
+
+#bottomLinks {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#myinfodiv {
+  border-radius: 0px 0px 6px 6px;
+}
+
+/* Main BTNs */
+
+.downloadbtn_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.downloadbtn_div button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#downloadbtncontainer {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.swal {
+  width: 75vw !important;
+}
+
+#myinfodiv1 {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#card-body {
+  align-items: center;
+  display: flex;
+  height: 650px;
+  width: 1000px;
+  align-self: center;
+  justify-content: center;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  border-radius: 15px;
+}
+
+#card-body h1,
+h2,
+h3,
+h4,
+span {
+  color: rgb(240, 240, 240);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+#card-body .i {
+  color: rgb(240, 240, 240);
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 916px;
+  width: calc(100% - 20px);
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(60, 255, 206, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(60, 255, 206, 0.4),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card > .card-content {
+  background-color: rgb(23, 23, 23);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image > .i {
+  font-size: 70px;
+  opacity: 0.25;
+}
+
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.card-info > .i {
+  font-size: 1em;
+  height: 20px;
+  line-height: 20px;
+}
+
+.card-info-title > h3 {
+  font-size: 1.2em;
+  line-height: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+  margin-top: 8px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1920px) {
+  #freelancingSectionDiv,
+  #terminalimg,
+  #myinfodiv {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* #headingThing {
+    width: 90%;
+  } */
+  #profilepic1 {
+    width: 0px;
+  }
+  #ttl {
+    font-size: 50px;
+  }
+  #subttl {
+    font-size: 30px;
+  }
+  #freelancingSectionDiv,
+  #terminalimg,
+  #myinfodiv {
+    min-width: 80vw;
+    min-height: 30;
+  }
+  #bottomText {
+    visibility: hidden;
+  }
+}

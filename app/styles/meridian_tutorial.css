@@ -1,0 +1,40 @@
+h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+p {
+  padding-left: 20px;
+}
+
+#sectionDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px;
+  border-color: gray;
+  justify-content: left;
+}
+
+.downloadbtn_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.downloadbtn_div button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#downloadbtncontainer {
+  border-radius: 0px 0px 8px 8px;
+}
+
+#futuraf {
+  font-family: "futura";
+}
