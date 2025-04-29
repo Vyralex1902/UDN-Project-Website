@@ -37,7 +37,7 @@ export default function Programming() {
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"programming"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg
-       text-black dark:text-white">
+       text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Luca's Coding Knowledge</h1>
         </div>
@@ -48,12 +48,12 @@ export default function Programming() {
               the date when I since started using that language to develope products.
             </p>
             <p>
-              <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-800 dark:text-cyan-500">[aug2024]</span><br />
-              <span className="text-purple-400">&gt;</span> TypeScript <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
-              <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
-              <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-800 dark:text-cyan-500">[mar2024]</span><br />
-              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-800 dark:text-cyan-500">[2019]</span><br />
-              <span className="text-purple-400">&gt;</span> Some Batch <span className="text-cyan-800 dark:text-cyan-500">[2020]</span><br />
+              <span className="text-purple-400">&gt;</span> Python <span className="text-cyan-500">[aug2024]</span><br />
+              <span className="text-purple-400">&gt;</span> TypeScript <span className="text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> HTML <span className="text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> CSS <span className="text-cyan-500">[mar2024]</span><br />
+              <span className="text-purple-400">&gt;</span> C# <span className="text-cyan-500">[2019]</span><br />
+              <span className="text-purple-400">&gt;</span> Some Batch <span className="text-cyan-500">[2020]</span><br />
             </p>
           </div>
           <div id="sectionDiv">
@@ -105,7 +105,7 @@ export default function Programming() {
         </div>
         <div className="relative bottom-6">
           <a href="/portfolio/contactme">
-            <p className="underline text-blue-600 dark:text-blue-500">
+            <p className="underline text-blue-500">
               Suggest a programming language
             </p>
           </a>

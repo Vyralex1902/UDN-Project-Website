@@ -33,7 +33,7 @@ export default function DonatePage() {
         </div>
         <form action="https://www.paypal.com/donate" method="post" target="_top">
           <input type="hidden" name="hosted_button_id" value="AET2KMM66MX96" />
-          <motion.button name="submit" className="w-[200px] h-[50px] bg-gray-500 rounded-lg font-sans border-black dark:border-white border-2"
+          <motion.button name="submit" className="w-[200px] h-[50px] bg-gray-500 rounded-lg font-sans border-white border-2"
             whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.8 }}>
             <div className='flex flex-col justify-center items-center'>
               <p>DONATE</p>

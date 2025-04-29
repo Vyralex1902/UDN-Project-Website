@@ -6,18 +6,16 @@ import Swal from 'sweetalert2';
 
 import "../styles/home.css";
 
-import tertitimg from "../assets/terminaltitle.png"
 import banner from "../assets/UDNP Large banner.png"
 import logo from "../assets/UDNP Logo 512x512.png"
 
-import { FaYoutube, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { RxDividerVertical } from "react-icons/rx";
-import { TbBrandFiverr } from "react-icons/tb";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Luca Montanari's Portfolio" },
-    { name: "Luca Montanari's Portfolio", content: "Welcome to Luca's Portfolio! I'm a free time web and app developer. Sometimes a designer." },
+    { title: "UDN Project" },
+    { name: "UDN Project", content: "Welcome to UDN Project." }
   ];
 };
 
@@ -26,17 +24,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
 
   useEffect(() => {
-    if (
-      localStorage.getItem('color-theme') === 'dark' ||
-      (!('color-theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    }
-    else {
-      document.documentElement.classList.remove('dark');
-    }
-
     console.log("Page loaded.");
 
     if (window.innerWidth < 900) {
@@ -50,7 +37,7 @@ export default function Index() {
 
   return (
     <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top bg-[rgba(14,16,17,1)]">
-      <meta name="description" content="Luca Montanari's portfolio: an aspiring developer (currently still a student). Ready for part-time hiring and freelancing." />
+      <meta name="description" content="Unified Developer Network Project" />
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
       <div className="w-screen h-screen flex flex-col items-center mt-[20vh]">
         <img src={banner} className="w-[50vw]"></img>
@@ -77,25 +64,6 @@ export default function Index() {
         </div>
       </div>
 
-      <motion.div initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }}>
-        <img id="terminalimg" className="z-10 w-[40vw]" src={tertitimg}></img>
-        <div id="myinfodiv" className="z-10 -mt-2 flex flex-col justify-center items-center align-top w-[39.8vw] bg-[rgba(24,26,27,0.5)] p-3
-       text-gray-300 shadow-xl">
-          <div className="flex flex-col items-left align-top">
-            <h2 className="text-4xl">
-              <span className="text-green-400">.age</span>&nbsp; <span className="text-purple-400">$&gt;</span> 18 years old
-              <br />
-              <span className="text-green-400">.loc</span> &nbsp;&nbsp;<span className="text-purple-400">$&gt;</span> Living in <span className="text-green-500">It</span><span className="text-white">a</span><span className="text-red-500">ly</span>
-              <br />
-              <span className="text-green-400">.lang</span> <span className="text-purple-400">$&gt;</span> Speaking en & it
-            </h2>
-            <h2 className="text-3xl mt-5">
-              <span className="text-purple-400">Current Profession &gt;</span> Student
-            </h2>
-          </div>
-        </div>
-      </motion.div>
       <motion.div initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">

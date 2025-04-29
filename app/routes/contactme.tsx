@@ -15,7 +15,7 @@ export default function ContactMePage() {
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"contactme"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg
-       text-black dark:text-white">
+       text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Contact me</h1>
         </div>

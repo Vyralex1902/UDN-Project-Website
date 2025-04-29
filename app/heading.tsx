@@ -64,7 +64,7 @@ const Heading = () => {
 
   return (
     <div className="fixed top-0 flex flex-row pt-[6px] pb-1 z-50 justify-center w-screen h-[75px] cursor-pointer">
-      <div id="headingThing" className="min-w-[670px] max-w-[550px] backdrop-blur-lg border-gray-500 dark:border-gray-700 border-opacity-20 dark:border-opacity-100 border-[1.5px] flex w-fit justify-center rounded-full items-center bg-transparent">
+      <div id="headingThing" className="min-w-[670px] max-w-[550px] backdrop-blur-lg border-gray-700 border-opacity-100 border-[1.5px] flex w-fit justify-center rounded-full items-center bg-transparent">
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "100%" }}>
           <HeadingIcon id="headingIcon1" text="Home" link="/" ></HeadingIcon>
           <ProductsHeadingIcon />
@@ -109,10 +109,10 @@ const CommunityHeadingIcon = () => (
       Community
       <div className="absolute" id="dropdown-content">
         <Link to="programming" className="cursor-pointer">
-          <p id="di4" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Threads</p>
+          <p id="di4" className="text-white bg-gray-900 hover:bg-gray-800">Threads</p>
         </Link>
         <Link to="docs" className="cursor-pointer">
-          <p id="di5" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Sign up</p>
+          <p id="di5" className="text-white bg-gray-900 hover:bg-gray-800">Sign up</p>
         </Link>
       </div>
     </div>
@@ -124,16 +124,16 @@ const LearnHeadingIcon = () => (
       Learn
       <div className="absolute" id="dropdown-content">
         <Link to="programming" className="cursor-pointer">
-          <p id="di6" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Courses</p>
+          <p id="di6" className="text-white bg-gray-900 hover:bg-gray-800">Courses</p>
         </Link>
         <Link to="docs" className="cursor-pointer">
-          <p id="di7" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Libraries</p>
+          <p id="di7" className="text-white bg-gray-900 hover:bg-gray-800">Libraries</p>
         </Link>
         <Link to="myprojects" className="cursor-pointer">
-          <p id="di8" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Tech Stacks</p>
+          <p id="di8" className="text-white bg-gray-900 hover:bg-gray-800">Tech Stacks</p>
         </Link>
         <Link to="meridian" className="cursor-pointer">
-          <p id="di9" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Snippets</p>
+          <p id="di9" className="text-white bg-gray-900 hover:bg-gray-800">Snippets</p>
         </Link>
       </div>
     </div>
@@ -144,13 +144,13 @@ const LearnHeadingIcon = () => (
       News
       <div className="absolute" id="dropdown-content">
         <Link to="programming" className="cursor-pointer">
-          <p id="di10" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Newsletter</p>
+          <p id="di10" className="text-white bg-gray-900 hover:bg-gray-800">Newsletter</p>
         </Link>
         <Link to="docs" className="cursor-pointer">
-          <p id="di11" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Blog</p>
+          <p id="di11" className="text-white bg-gray-900 hover:bg-gray-800">Blog</p>
         </Link>
         <Link to="myprojects" className="cursor-pointer">
-          <p id="di12" className="text-black dark:text-white bg-white dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">Social media</p>
+          <p id="di12" className="text-white bg-gray-900 hover:bg-gray-800">Social media</p>
         </Link>
       </div>
     </div>

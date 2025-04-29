@@ -74,11 +74,11 @@ export default function DocsPage() {
       <input type="text" className="absolute hidden" id="pageName" value={"docs"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="darkmode-bg fixed z-0"></div>
       <div style={{ width: "100%", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
-       text-black dark:text-white">
-        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20 text-black dark:text-white">
-          <h1 id="title" className="text-black dark:text-white animate-slideInFromTop">Luca's Docs</h1>
-          <h2 className="text-black dark:text-white">My documentations about topics I've found interesting and hard to find answers about.</h2>
-          <h4 className="text-gray-700 dark:text-gray-500">This is my way to share some of the thousands things I learn every month.</h4>
+       text-white">
+        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20 text-white">
+          <h1 id="title" className="text-white animate-slideInFromTop">Luca's Docs</h1>
+          <h2 className="text-white">My documentations about topics I've found interesting and hard to find answers about.</h2>
+          <h4 className="text-gray-500">This is my way to share some of the thousands things I learn every month.</h4>
         </div>
         <div className="flex flex-row justify-center z-10">
           <input id="searchBox" type="text" placeholder="Search for a topic..." className="placeholder-gray-400 bg-gray-900 w-[30vw] rounded-md"></input>
@@ -91,7 +91,7 @@ export default function DocsPage() {
 
 function GlowCards({ }) {
   return (
-    <div id='card-body' className="bg-[#1E1E1E] dark:bg-white/[.025]">
+    <div id='card-body' className="bg-white/[.025]">
       <div id="cards">
         <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
           <div className="card-content">

@@ -29,7 +29,7 @@ export default function BuyAServicePage() {
     <div className="flex flex-col align-top">
       <input type="text" className="absolute hidden" id="pageName" value={"buyservice"} readOnly></input>
       <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top bdarkmode-bg
-       text-black dark:text-white">
+       text-white">
         <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
           <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Buy a service</h1>
         </div>

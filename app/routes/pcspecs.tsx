@@ -24,21 +24,21 @@ export default function PCSpecsPage() {
   });
 
   return (
-    <div className="flex flex-col align-top bg-white dark:bg-[#1E1E1E]">
+    <div className="flex flex-col align-top bg-[#1E1E1E]">
       <input type="text" className="absolute hidden" id="pageName" value={"pcspecs"} readOnly></input>
-      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg text-black dark:text-white">
+      <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center align-top darkmode-bg text-white">
         <div id="topdiv" className="z-10 flex flex-col align-top items-center mt-20">
-          <h1 id="title" className="text-black dark:text-white animate-slideInFromTop">My Desktop PC's Specs</h1>
+          <h1 id="title" className="text-white animate-slideInFromTop">My Desktop PC's Specs</h1>
         </div>
         <div className="z-10 flex flex-col align-top items-center max-w-[70vw] mt-10 mb-10 backdrop-blur-md bg-black bg-opacity-5 rounded-lg p-4" id="text-container">
-          <p className="text-black dark:text-white text-3xl">
-            <span className="text-purple-600 dark:text-purple-400">WIN. VERSION ~</span> Windows 11 Pro
-            <br /><span className="text-purple-600 dark:text-purple-400">CPU ~</span> Intel i7-11700 2.5GHz
-            <br /><span className="text-purple-600 dark:text-purple-400">eGPU ~</span> NVIDIA RTX 3060
-            <br /><span className="text-purple-600 dark:text-purple-400">RAM ~</span> 16GB
-            <br /><span className="text-purple-600 dark:text-purple-400">STORAGE ~</span> 1TB SAMSUNG SSD
-            <br /><span className="text-purple-600 dark:text-purple-400">Main monitor ~</span> Samsung Odyssey G5 (2K 144Hz)
-            <br /><span className="text-purple-600 dark:text-purple-400">Secondary monitor ~</span> Samsung [I don't remember] (FHD 60Hz)
+          <p className="text-white text-3xl">
+            <span className="text-purple-400">WIN. VERSION ~</span> Windows 11 Pro
+            <br /><span className="text-purple-400">CPU ~</span> Intel i7-11700 2.5GHz
+            <br /><span className="text-purple-400">eGPU ~</span> NVIDIA RTX 3060
+            <br /><span className="text-purple-400">RAM ~</span> 16GB
+            <br /><span className="text-purple-400">STORAGE ~</span> 1TB SAMSUNG SSD
+            <br /><span className="text-purple-400">Main monitor ~</span> Samsung Odyssey G5 (2K 144Hz)
+            <br /><span className="text-purple-400">Secondary monitor ~</span> Samsung [I don't remember] (FHD 60Hz)
           </p>
         </div>
       </div>
