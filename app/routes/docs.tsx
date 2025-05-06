@@ -93,7 +93,7 @@ function GlowCards({ }) {
   return (
     <div id='card-body' className="bg-white/[.025]">
       <div id="cards">
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -105,7 +105,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -117,7 +117,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -129,7 +129,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -141,7 +141,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -153,7 +153,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
@@ -165,7 +165,7 @@ function GlowCards({ }) {
             </div>
           </div>
         </div>
-        <div className="card" onClick={() => { window.location.href = 'https://lucasnode.com/docs' }}>
+        <div className="card" onClick={() => { window.location.href = 'https://udn-project.com/docs' }}>
           <div className="card-content">
             <div className="card-info-wrapper">
               <div className="card-info">
