@@ -39,54 +39,55 @@ export default function Index() {
     <div id="fulldiv" style={{ width: "100vw", height: "100%" }} className="fjc flex-col items-center align-top bg-[rgba(14,16,17,1)]">
       <meta name="description" content="Unified Developer Network Project" />
       <input type="text" className="absolute hidden" id="pageName" value={"home"} readOnly></input>
-      <div className="w-screen h-screen flex flex-col items-center mt-[20vh]">
+      <div className="w-screen h-screen flex flex-col items-center align-middle pt-[20vh]">
         <img src={banner} className="w-[50vw]"></img>
-        <div className="w-screen justify-center flex"><div id="ttldiv" className="z-10 flex flex-col items-center align-middle">
-          <h2 className="ml-2 mb-5 bg-gradient-to-r from-green-400 to-cyan-400 inline-block text-transparent bg-clip-text text-[20px] font-[Montserrat]">A Unified Ecosystem for Developers.</h2>
-          <div className="z-10 flex justify-start gap-5 mt-5 ml-2">
-            <div id='downloadbtncontainer'>
-              <div className='flex justify-start pt-2'>
-                <div className='w-fit'>
-                  <Link to="hireme" className="cursor-context-menu">
-                    <div className="downloadbtn_div">
-                      <motion.button className="homepagebtn" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.9 }}>
-                        <div className='flex flex-col justify-center items-center'>
-                          <p>Learn more</p>
-                        </div>
-                      </motion.button>
-                    </div>
-                  </Link>
+        <div className="w-screen justify-center flex">
+          <div id="ttldiv" className="z-10 flex flex-col items-center align-middle">
+            <h2 className="ml-2 mb-5 bg-gradient-to-r from-green-400 to-cyan-400 inline-block text-transparent bg-clip-text text-[20px] font-[Montserrat]">A Unified Ecosystem for Developers.</h2>
+            <div className="z-10 flex justify-start gap-5 mt-5 ml-2">
+              <div id='downloadbtncontainer'>
+                <div className='flex justify-start pt-2'>
+                  <div className='w-fit'>
+                    <Link to="comingsoon" className="cursor-context-menu">
+                      <div className="downloadbtn_div">
+                        <motion.button className="homepagebtn" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.9 }}>
+                          <div className='flex flex-col justify-center items-center'>
+                            <p>Learn more</p>
+                          </div>
+                        </motion.button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
 
       <motion.div initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mt-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
+        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-[10vw] flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
       backdrop-blur-md p-3 text-gray-300 rounded-lg">
         <div className="flex flex-col items-center align-top mb-6">
           <h1 className="text-4xl text-[#2dc590]">
-            Freelancing Services
+            Coming soon...
           </h1>
         </div>
         <div className="flex flex-col items-left align-top">
           <h2 className="text-xl">
-            <span className="text-purple-400">~</span> front-end web development
+            <span className="text-purple-400">~</span> The website is currently still in development
             <br />
-            <span className="text-purple-400">~</span> simple to advanced pc app development (macOS, Windows)
+            <span className="text-purple-400">~</span> Keep checking back for updates
           </h2>
         </div>
-        <div className='mt-4' id='downloadbtncontainer'>
+        <div className='mt-4 hidden' id='downloadbtncontainer'>
           <div className='flex justify-center pt-2'>
             <div className='w-fit'>
               <Link to="buyservice" className="cursor-context-menu">
                 <div className="downloadbtn_div">
                   <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
                     <div className='flex flex-col justify-center items-center'>
-                      <p>Buy a service</p>
+                      <p>Back to google</p>
                     </div>
                   </motion.button>
                 </div>
@@ -97,7 +98,7 @@ export default function Index() {
       </motion.div>
       <motion.div initial={{ opacity: 0.25 }}
         whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
-      backdrop-blur-md p-3 text-gray-300 rounded-lg">
+      backdrop-blur-md p-3 text-gray-300 rounded-lg hidden">
         <div className="flex flex-col items-center align-top">
           <h1 className="text-4xl text-[#2dc590]">
             Support my projects
@@ -118,68 +119,6 @@ export default function Index() {
               </Link>
             </div>
           </div>
-        </div>
-      </motion.div>
-      <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
-      backdrop-blur-md p-3 text-gray-300 rounded-lg">
-        <div className="flex flex-col items-center align-top">
-          <h1 className="text-4xl text-[#2dc590]">
-            My Tech
-          </h1>
-          <p className="mt-5 mb-3 max-w-[30vw] font-[RanchinoLight] text-3xl">My everyday tech right now</p>
-        </div>
-        <div className="flex justify-center flex-col">
-          <p>
-            <span className="text-purple-400">~</span> iPhone 15 Pro Max
-            <br /><span className="text-purple-400">~</span> AirPods Pro 1
-            <br /><span className="text-purple-400">~</span> Apple Watch SE 2
-            <br /><span className="text-purple-400">~</span> MacBook Air M3 15'
-            <br /><span className="text-purple-400">~</span> Windows Desktop PC (<Link to="pcspecs" className="cursor-context-menu"><span className="text-purple-600 hover:text-purple-500">specs</span></Link>)
-          </p>
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-10 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
-      backdrop-blur-md p-3 text-gray-300 rounded-lg">
-        <div className="flex flex-col items-center align-top">
-          <h1 className="text-4xl text-[#2dc590]">
-            My Documentations
-          </h1>
-        </div>
-        <div className='mt-4' id='downloadbtncontainer'>
-          <div className='flex justify-center pt-2'>
-            <div className='w-fit'>
-              <Link to="docs" className="cursor-context-menu">
-                <div className="downloadbtn_div">
-                  <motion.button className="homepagebtnlarger" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
-                    <div className='flex flex-col justify-center items-center'>
-                      <p>See the docs</p>
-                    </div>
-                  </motion.button>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div initial={{ opacity: 0.25 }}
-        whileInView={{ opacity: 1 }} viewport={{ amount: 0.8 }} id="freelancingSectionDiv" className="z-10 mb-20 flex flex-col justify-center items-center align-top w-[40vw] bg-[rgba(24,26,27,0.5)]
-      backdrop-blur-md p-3 text-gray-300 rounded-lg">
-        <div className="flex flex-col items-center align-top">
-          <h1 className="text-4xl text-[#2dc590]">
-            Coding Environment
-          </h1>
-          <p className="mt-5 mb-3 max-w-[30vw] font-[RanchinoLight] text-3xl">My coding environment and tools</p>
-        </div>
-        <div className="flex justify-center flex-col">
-          <p>
-            <span className="text-purple-400">IDE ~</span> VSCode (also used to make this website)
-            <br /><span className="text-purple-400">Terminal ~</span> MacOS Terminal
-            <br /><span className="text-purple-400">JS Framework ~</span> Remix | React
-            <br /><span className="text-purple-400">PC Framework ~</span> .NET Framework and SwiftUI
-          </p>
         </div>
       </motion.div>
 

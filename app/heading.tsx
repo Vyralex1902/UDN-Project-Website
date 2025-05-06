@@ -90,13 +90,13 @@ const ProductsHeadingIcon = () => (
     <div id="headingIcon2" className="heading-icon group z-50 text-[15px] cursor-pointer">
       Products
       <div className="absolute" id="dropdown-content">
-        <Link to="programming" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di1" className="text-white bg-gray-900 hover:bg-gray-800">Apps</p>
         </Link>
-        <Link to="docs" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di2" className="text-white bg-gray-900 hover:bg-gray-800">Docs</p>
         </Link>
-        <Link to="myprojects" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di3" className="text-white bg-gray-900 hover:bg-gray-800">Design</p>
         </Link>
       </div>
@@ -108,10 +108,10 @@ const CommunityHeadingIcon = () => (
     <div id="headingIcon3" className="heading-icon group z-50 text-[15px] cursor-pointer">
       Community
       <div className="absolute" id="dropdown-content">
-        <Link to="programming" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di4" className="text-white bg-gray-900 hover:bg-gray-800">Threads</p>
         </Link>
-        <Link to="docs" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di5" className="text-white bg-gray-900 hover:bg-gray-800">Sign up</p>
         </Link>
       </div>
@@ -123,16 +123,16 @@ const LearnHeadingIcon = () => (
     <div id="headingIcon4" className="heading-icon group z-50 text-[15px] cursor-pointer">
       Learn
       <div className="absolute" id="dropdown-content">
-        <Link to="programming" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di6" className="text-white bg-gray-900 hover:bg-gray-800">Courses</p>
         </Link>
-        <Link to="docs" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di7" className="text-white bg-gray-900 hover:bg-gray-800">Libraries</p>
         </Link>
-        <Link to="myprojects" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di8" className="text-white bg-gray-900 hover:bg-gray-800">Tech Stacks</p>
         </Link>
-        <Link to="meridian" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di9" className="text-white bg-gray-900 hover:bg-gray-800">Snippets</p>
         </Link>
       </div>
@@ -143,13 +143,13 @@ const LearnHeadingIcon = () => (
     <div id="headingIcon5" className="heading-icon group z-50 text-[15px] cursor-pointer">
       News
       <div className="absolute" id="dropdown-content">
-        <Link to="programming" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di10" className="text-white bg-gray-900 hover:bg-gray-800">Newsletter</p>
         </Link>
-        <Link to="docs" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di11" className="text-white bg-gray-900 hover:bg-gray-800">Blog</p>
         </Link>
-        <Link to="myprojects" className="cursor-pointer">
+        <Link to="comingsoon" className="cursor-pointer">
           <p id="di12" className="text-white bg-gray-900 hover:bg-gray-800">Social media</p>
         </Link>
       </div>
