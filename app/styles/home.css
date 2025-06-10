@@ -1,5 +1,4 @@
 h3 {
-  text-decoration: underline;
   font-size: medium;
 }
 
@@ -45,54 +44,30 @@ h1 {
   }
 }
 
-/* The typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  80% {
-    width: 100%;
-  }
-}
-@keyframes wordss {
-  0%,
-  33% {
-    content: "Web and App Developer";
-  }
-  34%,
-  67% {
-    content: "Frontend Developer";
-  }
-  68%,
-  100% {
-    content: "Tech enthusiast";
-  }
-}
-
 #profilepic1 {
   transition-duration: 1s;
   transition-timing-function: linear;
 }
 
-#freelancingSectionDiv,
+#wideCardDiv,
 #terminalimg,
 #myinfodiv {
   /* animation: reveal ease-in;
   animation-timeline: view();
   animation-range-end: 15%; */
-  min-width: 600px;
+  min-width: 10vw;
 }
-#freelancingSectionDiv,
+#wideCardDiv,
 #myinfodiv {
   border: 1px solid;
   border-color: rgba(200, 200, 200, 0.1);
 }
-#freelancingSectionDiv::hover,
+#wideCardDiv::hover,
 #myinfodiv::hover {
   box-shadow: 0 0 15px rgba(120, 0, 108, 0.3);
 }
 
-#freelancingSectionDiv h1,
+#wideCardDiv h1,
 h2,
 #myinfodiv h1,
 h2 {
@@ -184,7 +159,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  max-width: 916px;
+  max-width: 80vw;
   width: calc(100% - 20px);
 }
 
@@ -193,11 +168,11 @@ span {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(200, 200, 200, 0.2);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 260px;
+  height: 200px;
   flex-direction: column;
   position: relative;
   width: 300px;
@@ -223,7 +198,7 @@ span {
 .card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(60, 255, 206, 0.06),
+    rgba(60, 255, 206, 0.03),
     transparent 40%
   );
   z-index: 3;
@@ -232,14 +207,15 @@ span {
 .card::after {
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y),
-    rgba(60, 255, 206, 0.4),
+    rgba(60, 255, 206, 0.5),
     transparent 40%
   );
   z-index: 1;
 }
 
 .card > .card-content {
-  background-color: rgb(23, 23, 23);
+  background-color: rgba(26, 26, 26, 0.43);
+  backdrop-filter: blur(2px);
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -258,16 +234,11 @@ span {
   overflow: hidden;
 }
 
-.card-image > .i {
-  font-size: 70px;
-  opacity: 0.25;
-}
-
 .card-info-wrapper {
   align-items: center;
   display: flex;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: left;
   padding: 0px 20px;
 }
 
@@ -275,12 +246,7 @@ span {
   align-items: flex-start;
   display: flex;
   gap: 10px;
-}
-
-.card-info > .i {
-  font-size: 1em;
-  height: 20px;
-  line-height: 20px;
+  max-width: 150px;
 }
 
 .card-info-title > h3 {
@@ -297,7 +263,7 @@ span {
 }
 
 @media only screen and (max-width: 1920px) {
-  #freelancingSectionDiv,
+  #wideCardDiv,
   #terminalimg,
   #myinfodiv {
     width: 50vw;
@@ -317,7 +283,7 @@ span {
   #subttl {
     font-size: 30px;
   }
-  #freelancingSectionDiv,
+  #wideCardDiv,
   #terminalimg,
   #myinfodiv {
     min-width: 80vw;

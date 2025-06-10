@@ -67,10 +67,10 @@ const Heading = () => {
       <div id="headingThing" className="min-w-[670px] max-w-[550px] backdrop-blur-lg border-gray-700 border-opacity-100 border-[1.5px] flex w-fit justify-center rounded-full items-center bg-transparent">
         <div className="flex w-fit justify-center absolute justify-self-center gap-2" style={{ width: "100%" }}>
           <HeadingIcon id="headingIcon1" text="Home" link="/" ></HeadingIcon>
-          <ProductsHeadingIcon />
-          <CommunityHeadingIcon />
-          <LearnHeadingIcon />
-          <NewsHeadingIcon />
+          <DestinationsHeadingIcon />
+          <BikesHeadingIcon />
+          <TipsHeadingIcon />
+          <VideosHeadingIcon />
         </div>
       </div>
     </div>
@@ -85,73 +85,70 @@ const HeadingIcon = ({ id, text = 'Text', link }: { id: string, text: string, li
   </Link>
 );
 
-const ProductsHeadingIcon = () => (
+const DestinationsHeadingIcon = () => (
   <div>
     <div id="headingIcon2" className="heading-icon group z-50 text-[15px] cursor-pointer">
-      Products
+      Destinations
       <div className="absolute" id="dropdown-content">
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di1" className="text-white bg-gray-900 hover:bg-gray-800">Apps</p>
+          <p id="di1" className="text-white bg-gray-900 hover:bg-gray-800">Car</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di2" className="text-white bg-gray-900 hover:bg-gray-800">Docs</p>
+          <p id="di2" className="text-white bg-gray-900 hover:bg-gray-800">Motorcycle</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di3" className="text-white bg-gray-900 hover:bg-gray-800">Design</p>
+          <p id="di3" className="text-white bg-gray-900 hover:bg-gray-800">Mixed</p>
         </Link>
       </div>
     </div>
   </div>
 );
-const CommunityHeadingIcon = () => (
+const BikesHeadingIcon = () => (
   <div>
     <div id="headingIcon3" className="heading-icon group z-50 text-[15px] cursor-pointer">
-      Community
+      Bikes
       <div className="absolute" id="dropdown-content">
-        <Link to="comingsoon" className="cursor-pointer">
-          <p id="di4" className="text-white bg-gray-900 hover:bg-gray-800">Threads</p>
+        <Link to="bestbikes" className="cursor-pointer">
+          <p id="di4" className="text-white bg-gray-900 hover:bg-gray-800">Champions</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di5" className="text-white bg-gray-900 hover:bg-gray-800">Sign up</p>
+          <p id="di5" className="text-white bg-gray-900 hover:bg-gray-800">Best VFM</p>
         </Link>
       </div>
     </div>
   </div>
 );
-const LearnHeadingIcon = () => (
+const TipsHeadingIcon = () => (
   <div>
     <div id="headingIcon4" className="heading-icon group z-50 text-[15px] cursor-pointer">
-      Learn
+      Tips
       <div className="absolute" id="dropdown-content">
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di6" className="text-white bg-gray-900 hover:bg-gray-800">Courses</p>
+          <p id="di6" className="text-white bg-gray-900 hover:bg-gray-800">Tutorials</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di7" className="text-white bg-gray-900 hover:bg-gray-800">Libraries</p>
+          <p id="di7" className="text-white bg-gray-900 hover:bg-gray-800">Tips list</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di8" className="text-white bg-gray-900 hover:bg-gray-800">Tech Stacks</p>
+          <p id="di8" className="text-white bg-gray-900 hover:bg-gray-800">??</p>
         </Link>
         <Link to="comingsoon" className="cursor-pointer">
-          <p id="di9" className="text-white bg-gray-900 hover:bg-gray-800">Snippets</p>
+          <p id="di9" className="text-white bg-gray-900 hover:bg-gray-800">??</p>
         </Link>
       </div>
     </div>
   </div>
-); const NewsHeadingIcon = () => (
+); const VideosHeadingIcon = () => (
   <div>
     <div id="headingIcon5" className="heading-icon group z-50 text-[15px] cursor-pointer">
-      News
+      Videos
       <div className="absolute" id="dropdown-content">
-        <Link to="comingsoon" className="cursor-pointer">
-          <p id="di10" className="text-white bg-gray-900 hover:bg-gray-800">Newsletter</p>
-        </Link>
-        <Link to="comingsoon" className="cursor-pointer">
-          <p id="di11" className="text-white bg-gray-900 hover:bg-gray-800">Blog</p>
-        </Link>
-        <Link to="comingsoon" className="cursor-pointer">
-          <p id="di12" className="text-white bg-gray-900 hover:bg-gray-800">Social media</p>
-        </Link>
+        <a href="https://www.youtube.com/channel/UCobVHzwUeSZnTgXk4OrHmOg/" target="_blank" className="cursor-pointer">
+          <p id="di10" className="text-white bg-gray-900 hover:bg-gray-800">YouTube</p>
+        </a>
+        <a href="https://instagram.com/blipnrevs" target="_blank" className="cursor-pointer">
+          <p id="di11" className="text-white bg-gray-900 hover:bg-gray-800">Instagram</p>
+        </a>
       </div>
     </div>
   </div>

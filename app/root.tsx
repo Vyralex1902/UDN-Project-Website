@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Luca Montanari's portfolio: an aspiring developer (currently still a student). Ready for part-time hiring and freelancing." />
+        <meta name="description" content="A unified ecosystem for drivers & riders. Find info about ride destinations and best value-for-money cars & bikes." />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
         <link href="favicon.ico"></link>
