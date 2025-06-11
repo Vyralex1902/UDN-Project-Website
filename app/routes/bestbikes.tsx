@@ -44,45 +44,103 @@ export default function BestBikesPage() {
 import img_1 from "../assets/best-s1000rr-169.jpg"
 import img_2 from "../assets/m1000xr.jpg"
 import img_3 from "../assets/H2R.jpg"
-import img_4 from "../assets/best-s1000rr-169.jpg"
-import img_5 from "../assets/best-s1000rr-169.jpg"
-import img_6 from "../assets/best-s1000rr-169.jpg"
-import img_7 from "../assets/best-s1000rr-169.jpg"
-import img_8 from "../assets/best-s1000rr-169.jpg"
+import img_4 from "../assets/DucatiPanigaleV4.jpg"
+import img_5 from "../assets/honda-cbr1000rr-r-fireblade-sp.jpg"
+import img_6 from "../assets/yamaha-r1.jpg"
+import img_7 from "../assets/aprilia-rsv4.jpg"
+import img_8 from "../assets/zx10r.jpg"
+import img_9 from "../assets/MVAgustaSuperveloce1000SerieOro.jpg"
+import img_10 from "../assets/ducatiStreetfighter.jpg"
+import img_11 from "../assets/suzuki-hayabusa.jpg"
+import img_12 from "../assets/DucatiDiavelV4.jpg"
+import img_13 from "../assets/aprilia-rs-660.jpg"
+import img_14 from "../assets/HondaCBR600RR.jpg"
+import img_15 from "../assets/YamahaR6.jpg"
 
 const CardGrid = () => {
-  const data = [
-    { name: 'BMW S1000RR', img: img_1 },
-    { name: 'BMW M1000XR', img: img_2 },
-    { name: 'Kawasaki Ninja H2R', img: img_3 },
-    { name: 'Ducati Panigale V4', img: img_3 },
-    { name: 'Honda CBR1000RR', img: img_5 },
-    { name: 'Yamaha R1', img: img_5 },
-    { name: 'Aprilia RSV4 Factory', img: img_5 },
+  const data1000 = [
+    { name: 'BMW S1000RR', img: img_1, link: 's1000rr' },
+    { name: 'BMW M1000XR', img: img_2, link: 'bmw-m1000xr' },
+    { name: 'Kawasaki Ninja H2R', img: img_3, link: 'k-ninja-h2r' },
+    { name: 'Ducati Panigale V4', img: img_4, link: 'ducati-panigale-v4' },
+    { name: 'Honda CBR1000RR', img: img_5, link: 'honda-cbr1000rr' },
+    { name: 'Yamaha R1', img: img_6, link: 'yamaha-r1' },
+    { name: 'Aprilia RSV4 Factory', img: img_7, link: 'aprilia-rsv4' },
+    { name: 'Kawasaki Ninja ZX-10R', img: img_8, link: 'k-ninja-zx10r' },
+    { name: 'MV Agusta Superveloce 1000 Serie Oro', img: img_9, link: 'mv-superveloce-1000so' },
+    { name: 'Ducati Streetfighter V4', img: img_10, link: 'ducati-streetfighter-v4' },
+    { name: 'Suzuki Hayabusa', img: img_11, link: 'suzuki-hayabusa' },
+    { name: 'Ducati Diavel V4', img: img_12, link: 'ducati-diavel-v4' },
+  ];
+  const data600 = [
+    { name: 'Aprilia RS 660', img: img_13, link: 'aprilia-rs660' },
+    { name: 'Honda CBR 600 RR', img: img_14, link: 'honda-cbr600rr' },
+    { name: 'Yamaha R6', img: img_15, link: 'yamaha-r6' },
   ];
 
-  const cards = Array.from({ length: 50 }, (_, i) => {
+  const cards1000 = Array.from({ length: 12 }, (_, i) => {
     // Use the modulo operator (%) to cycle through your carData array
-    const dataIndex = i % data.length;
-    const item = data[dataIndex];
+    const dataIndex = i % data1000.length;
+    const item = data1000[dataIndex];
 
     return {
       id: i + 1,
       title: item.name,
-      img: item.img
+      img: item.img,
+      link: item.link
+    };
+  });
+
+  const cards600 = Array.from({ length: 3 }, (_, i) => {
+    // Use the modulo operator (%) to cycle through your carData array
+    const dataIndex = i % data600.length;
+    const item = data600[dataIndex];
+
+    return {
+      id: i + 1,
+      title: item.name,
+      img: item.img,
+      link: item.link
     };
   });
 
   return (
     <div className="min-h-screen p-4 md:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-white mb-8 text-center">
+        <h1 className="text-3xl font-bold text-white mb-4 text-center">
           Top of the line super-bikes
         </h1>
 
+        <h2 className="text-center mb-1">1000+cc</h2>
+
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-          {cards.map((card) => (
-            <div
+          {cards1000.map((card) => (
+            <motion.div whileHover={{ scale: 1.03, borderColor: "transparent" }} onClick={() => { window.location.href = 'https://udn-project.com/champions/' + card.link }}
+              key={card.id}
+              className={`w-[400px] h-[225px] border-2 border-gray-600 rounded-lg duration-200 cursor-pointer flex flex-col items-center align-middle justify-center`}
+            >
+
+              <div className="w-full h-full overflow-hidden">
+                <img
+                  src={card.img}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="absolute flex-1 flex flex-col justify-center z-10">
+                <h3 className="backdrop-blur-[2px] text-lg font-semibold text-white mb-2 text-center">
+                  {card.title}
+                </h3>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <h2 className="text-center mb-1 mt-10">600cc</h2>
+
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+          {cards600.map((card) => (
+            <motion.div whileHover={{ scale: 1.03, borderColor: "transparent" }}
               key={card.id}
               className={`w-[400px] h-[225px] border-2 rounded-lg duration-200 cursor-pointer flex flex-col items-center align-middle justify-center`}
             >
@@ -99,7 +157,7 @@ const CardGrid = () => {
                   {card.title}
                 </h3>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
