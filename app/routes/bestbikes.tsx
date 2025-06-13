@@ -27,11 +27,11 @@ export default function BestBikesPage() {
 
   return (
     <div className="flex flex-col align-top">
-      <input type="text" className="absolute hidden" id="pageName" value={"buyservice"} readOnly></input>
+      <input type="text" className="absolute hidden" id="pageName" value={"champions"} readOnly></input>
       <div style={{ width: "100vw", height: "100%" }} className="flex flex-col items-center align-top darkmode-bg
        text-white">
-        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mb-10 mt-20">
-          <h1 id="title" className="darkmode-text-h2 animate-slideInFromTop">Buy a service</h1>
+        <div id="topdiv" className="z-10 flex flex-col justify-center items-center mt-20">
+          <h1 id="title" className="bg-gradient-to-r from-yellow-400 to-orange-400 inline-block text-transparent bg-clip-text animate-slideInFromTop">Champions</h1>
         </div>
         <div id="container">
           <CardGrid />
@@ -56,6 +56,7 @@ import img_12 from "../assets/DucatiDiavelV4.jpg"
 import img_13 from "../assets/aprilia-rs-660.jpg"
 import img_14 from "../assets/HondaCBR600RR.jpg"
 import img_15 from "../assets/YamahaR6.jpg"
+import img_16 from "../assets/kawasaki-ninja-zx6r.jpg"
 
 const CardGrid = () => {
   const data1000 = [
@@ -76,6 +77,7 @@ const CardGrid = () => {
     { name: 'Aprilia RS 660', img: img_13, link: 'aprilia-rs660' },
     { name: 'Honda CBR 600 RR', img: img_14, link: 'honda-cbr600rr' },
     { name: 'Yamaha R6', img: img_15, link: 'yamaha-r6' },
+    { name: 'Kawasaki Ninja ZX-6R', img: img_16, link: 'k-ninja-zx6r' },
   ];
 
   const cards1000 = Array.from({ length: 12 }, (_, i) => {
@@ -111,6 +113,7 @@ const CardGrid = () => {
           Top of the line super-bikes
         </h1>
 
+        <div id="divider" className="mt-1 mb-1"></div>
         <h2 className="text-center mb-1">1000+cc</h2>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
@@ -127,8 +130,8 @@ const CardGrid = () => {
                 />
               </div>
 
-              <div className="absolute flex-1 flex flex-col justify-center z-10">
-                <h3 className="backdrop-blur-[2px] text-lg font-semibold text-white mb-2 text-center">
+              <div className="absolute flex-1 flex flex-col justify-center z-10 bg-black bg-opacity-50">
+                <h3 className="backdrop-blur-[2px] text-lg text-white mb-2 text-center">
                   {card.title}
                 </h3>
               </div>
@@ -136,7 +139,8 @@ const CardGrid = () => {
           ))}
         </div>
 
-        <h2 className="text-center mb-1 mt-10">600cc</h2>
+        <div id="divider" className="mt-8 mb-1"></div>
+        <h2 className="text-center mb-1 ">600cc</h2>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {cards600.map((card) => (
